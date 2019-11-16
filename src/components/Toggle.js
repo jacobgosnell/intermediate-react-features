@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class Toggle extends Component {
+class Toggle extends Component {
   state = {
     on: false
   }
@@ -13,12 +13,14 @@ export default class Toggle extends Component {
 
   render() {
     return (
-      <React.fragment>
+      <div>
         {this.state.on && (
           <h1>Toggle Me</h1>
         )}
-        <button onClick={this.toggle}>Show/Hide</button>;
-      </React.fragment>
+        <button onClick={this.toggle}>Show/Hide</button>
+      </div>
     );
   }
 }
+
+export default Toggle;

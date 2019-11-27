@@ -9,6 +9,7 @@ export default class User extends Component {
         <div> 
           <h1>{context.user.name}</h1>
           <h3>{context.user.email}</h3>
+          <button onClick={context.logout}>Logout</button>
         </div>
       )}
       </UserContext.Consumer>
